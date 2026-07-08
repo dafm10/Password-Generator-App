@@ -1,0 +1,70 @@
+.progressbar-container {
+  width: 100%;
+
+  .slider {
+    appearance: none;
+    width: 100%;
+    height: var(--spacing-100);
+    background-color: var(--grey-850);
+    outline: none;
+    cursor: pointer;
+
+    /* .slider::-webkit-slider-thumb {
+      appearance: none;
+      width: 28px;
+      height: 28px;
+      background-color: black;
+    } */
+  }
+}
+
+.passGen {
+  padding: var(--spacing-200);
+  background-color: var(--grey-800);
+
+  .password-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-100);
+
+    /* .password-field__text {
+      color: var(--grey-700);
+    } */
+
+    .password-field__text-btn {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-100);
+
+      .password-field__label {
+        color: var(--green-200);
+      }
+
+      .password-field__copy-btn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      .password-field__copy-btn:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      .icon-copy {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .password-field[data-state="empty"] .password-field__text {
+    color: var(--grey-700);
+  }
+
+  .password-field[data-state="filled"] .password-field__text,
+  .password-field[data-state="copied"] .password-field__text {
+    color: var(--white);
+  }
+}

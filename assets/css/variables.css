@@ -1,0 +1,38 @@
+:root {
+  /* COLORS */
+
+  /* Neutral */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Grey */
+  --grey-200: #e6e5ea;
+  --grey-600: #817d92;
+  --grey-700: #54535b;
+  --grey-800: #24232c;
+  --grey-850: #18171f;
+  --grey-900: #14131b;
+  --grey-950: #08070b;
+
+  /* Otros */
+  --green-200: #a4ffaf;
+  --yellow-300: #f8cd65;
+  --orange-400: #fb7c58;
+  --red-500: #f64a4a;
+
+  /* Gradient */
+  --gradient: linear-gradient(#14131b 0%, #08070b 100%);
+
+  /* SPACING */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-1000: 5rem; /* 80px */
+  --spacing-1300: 6.5rem; /* 104px */
+  --spacing-1600: 8rem; /* 128px */
+  --spacing-2000: 10rem; /* 160px */
+  --spacing-2200: 11rem; /* 176px */
+  --spacing-2300: 11.5rem; /* 184px */
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Password Generator App | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1 class="textPreset-4 main-container__title">Password Generator</h1>
+      <section class="container-password">
+        <section class="passGen">
+          <div class="password-field" data-state="empty">
+            <span class="password-field__text textPreset-1 textPreset-2"
+              >P4$5W0rD!</span
+            >
+            <div class="password-field__text-btn">
+              <span class="password-field__label textPreset-4" hidden
+                >COPIED</span
+              >
+              <button
+                class="password-field__copy-btn"
+                aria-label="Copiar contraseña"
+                disabled
+              >
+                <img
+                  class="icon-copy"
+                  src="./assets/images/icon-copy.svg"
+                  alt="copied icon"
+                />
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="container-generator">
+          <div class="generator-content">
+            <div class="character-container">
+              <div class="character-text">
+                <p class="character-text__title textPreset-4 textPreset-3">
+                  Character Length
+                </p>
+                <p class="character-text__number textPreset-2">0</p>
+              </div>
+
+              <div class="progressbar-container">
+                <input
+                  type="range"
+                  min="0"
+                  max="20"
+                  value="0"
+                  class="slider"
+                  id="progressBar"
+                />
+              </div>
+            </div>
+
+            <div class="check-container">
+              <div class="check-container__cbox1 cbox-content">
+                <input
+                  type="checkbox"
+                  id="cbox1"
+                  value="uppercase"
+                  class="check__input"
+                />
+                <label for="cbox1" class="textPreset-4 textPreset-3 cbox-label"
+                  >Include Uppercase Letters</label
+                >
+              </div>
+              <div class="check-container__cbox2 cbox-content">
+                <input
+                  type="checkbox"
+                  id="cbox2"
+                  value="lowercase"
+                  class="check__input"
+                />
+                <label for="cbox2" class="textPreset-4 textPreset-3 cbox-label"
+                  >Include Lowercase Letters</label
+                >
+              </div>
+              <div class="check-container__cbox3 cbox-content">
+                <input
+                  type="checkbox"
+                  id="cbox3"
+                  value="numbers"
+                  class="check__input"
+                />
+                <label for="cbox3" class="textPreset-4 textPreset-3 cbox-label"
+                  >Include Numbers</label
+                >
+              </div>
+              <div class="check-container__cbox4 cbox-content">
+                <input
+                  type="checkbox"
+                  id="cbox4"
+                  value="uppercase"
+                  class="check__input"
+                />
+                <label for="cbox4" class="textPreset-4 textPreset-3 cbox-label"
+                  >Include Symbols</label
+                >
+              </div>
+            </div>
+
+            <div class="strength-container">
+              <div class="strength-content">
+                <p class="streng-title textPreset-3 textPreset-4">STRENGTH</p>
+                <div class="strength-range">
+                  <p id="level-text" class="textPreset-2" hidden>MEDIUM</p>
+                  <div class="range-columns">
+                    <div class="range-level"></div>
+                    <div class="range-level"></div>
+                    <div class="range-level"></div>
+                    <div class="range-level"></div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="generate-btn textPreset-4 textPreset-3">
+                GENERATE
+                <img src="./assets/images/icon-arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

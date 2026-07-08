@@ -1,0 +1,49 @@
+/* 1. Evitar problemas de tamaño al calcular bordes y rellenos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Eliminar márgenes y rellenos por defecto */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Ajustes básicos para el cuerpo de la página */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Hacer que los elementos multimedia sean responsivos */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Heredar tipos de letra en inputs y botones */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Eliminar animaciones y transiciones para usuarios que prefieran reducirlas */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

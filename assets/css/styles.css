@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: var(--grey-950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  width: 21.4375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200);
+
+  @media screen and (min-width: 48rem) {
+    width: 33.75rem;
+  }
+}
+
+.main-container__title {
+  color: var(--grey-600);
+}
+
+.container-password {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-200);
+}
+
+.container-generator {
+  padding: var(--spacing-200);
+  background-color: var(--grey-800);
+
+  .generator-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+
+    .character-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-100);
+
+      .character-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .character-text__title {
+          color: var(--grey-200);
+        }
+
+        .character-text__number {
+          color: var(--green-200);
+        }
+      }
+    }
+
+    .check-container {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-200);
+
+      .cbox-content {
+        display: flex;
+        justify-content: flex-start;
+        gap: var(--spacing-200);
+
+        .cbox-label {
+          color: var(--grey-200);
+        }
+
+        .check__input {
+          position: relative;
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          border: 2px solid var(--grey-200);
+          background: transparent;
+          cursor: pointer;
+          margin: 0;
+          flex-shrink: 0;
+        }
+
+        .check__input:hover {
+          border: 2px solid var(--green-200);
+        }
+
+        .check__input:checked {
+          background-color: var(--green-200);
+        }
+
+        .check__input:checked::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 12px;
+          height: 12px;
+          background-image: url("../images/icon-check.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+
+    .strength-container {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      gap: var(--spacing-300);
+
+      .strength-content {
+        padding: 14px var(--spacing-200);
+        background-color: var(--grey-850);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .streng-title {
+          color: var(--grey-600);
+        }
+
+        .strength-range {
+          display: flex;
+          gap: var(--spacing-200);
+
+          p {
+            color: var(--grey-200);
+          }
+
+          .range-level {
+            width: 10px;
+            height: 28px;
+            border: 2px solid var(--grey-200);
+          }
+
+          .range-columns {
+            display: flex;
+            gap: var(--spacing-100);
+          }
+        }
+      }
+
+      .generate-btn {
+        padding: var(--spacing-200) var(--spacing-1300);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-200);
+        background-color: var(--green-200);
+        color: var(--black);
+        cursor: pointer;
+
+        img {
+          width: 11.11px;
+          height: 12px;
+        }
+      }
+
+      .generate-btn:hover {
+        background-color: transparent;
+        border: 2px solid var(--green-200);
+        color: var(--green-200);
+      }
+    }
+  }
+}
