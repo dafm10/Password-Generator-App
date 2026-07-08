@@ -1,5 +1,5 @@
-@import "/assets/css/reset.css";
-@import "/assets/css/variables.css";
-@import "/assets/css/styles.css";
-@import "/assets/css/typography.css";
-@import "/assets/css/components.css";
+@import "./reset.css";
+@import "./variables.css";
+@import "./styles.css";
+@import "./typography.css";
+@import "./typography.css";
